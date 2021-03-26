@@ -19,3 +19,51 @@ h1,
 h2 {
   text-align: center;
 }
+body {
+  background: linear-gradient(
+    to left top,
+    rgba(7, 7, 44, 0.444),
+    rgba(12, 12, 54, 0.763)
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: relative;
+  padding: 10px;
+}
+.centerDot {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 46%;
+  left: 43%;
+  opacity: 0.9;
+}
+
+.hand {
+  width: 45%;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05sec;
+}
+.handsec {
+  background-color: rgb(29, 28, 28);
+}
+.handmin {
+}
+.handhr {
+  height: 7px;
+}
